@@ -1,0 +1,12 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel-item video,
+.carousel-item img {
+  min-width: 600px;
+  min-height: 400px;
+}
