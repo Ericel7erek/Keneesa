@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./ImageSlider.css"; // Assuming your CSS is saved in this file
+import "./ImageSlider.css";
 
 const ImageSlider = () => {
   const images = [
@@ -34,17 +34,22 @@ const ImageSlider = () => {
   const resumeSlideshow = () => {
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 5000);
   };
 
   return (
-    <div
-      id="imageSlider"
-      className="image-slider"
-      style={{ backgroundImage: images[currentIndex] }}
-      onMouseEnter={pauseSlideshow}
-      onMouseLeave={resumeSlideshow}
-    ></div>
+    <div className="Container">
+      <div
+        id="imageSlider"
+        className="image-slider"
+        style={{ backgroundImage: images[currentIndex] }}
+        onMouseEnter={pauseSlideshow}
+        onMouseLeave={resumeSlideshow}
+      >
+        <div className="layer"></div>
+      </div>
+      <div className="centered">الكنيسة</div>
+    </div>
   );
 };
 

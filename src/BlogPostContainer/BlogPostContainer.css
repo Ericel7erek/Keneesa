@@ -6,28 +6,33 @@
 }
 
 .blog-post {
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
   width: 80%;
 }
+.blog-post:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
 
 .blog-image {
   margin-right: 20px;
-  width: 150px; /* Adjust the size as needed */
-  height: 150px; /* Adjust the size as needed */
-  object-fit: cover; /* This makes sure the image covers the area nicely */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .blog-post h2 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .blog-post p {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 1rem;
 }

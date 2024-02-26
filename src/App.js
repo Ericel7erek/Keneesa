@@ -4,6 +4,7 @@ import BlogPostContainer from "./BlogPostContainer/BlogPostContainer.js";
 import MediaCarousel from "./MediaCarousel/MediaCarousel.js";
 import ContactUs from "./ContactUs/ContactUs";
 import ImageSlider from "./ImageSlider/ImageSlider.js";
+
 const mediaItems = [
   {
     type: "image",
@@ -19,7 +20,6 @@ const mediaItems = [
     url: "https://via.placeholder.com/600x400?text=Another+Image",
     altText: "Another Placeholder Image",
   },
-  // Add more items as needed
 ];
 
 function App() {

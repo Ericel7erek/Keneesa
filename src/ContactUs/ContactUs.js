@@ -1,24 +1,31 @@
 import React from "react";
-import "./ContactUs.css"; // Make sure to create this CSS file for styling
-
+import "./ContactUs.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 const ContactUs = () => {
-  // Placeholder function to handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert("Form submitted. Thank you!");
-    // Here, you'd typically handle the form submission, e.g., sending data to a server
-  };
+  // // Placeholder function to handle form submission
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   alert("Form submitted. Thank you!");
+  //   // Here, you'd typically handle the form submission, e.g., sending data to a server
+  // };
 
   return (
     <div className="contact-us-container">
       <div className="contact-form">
         <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <ul className="ul" style={{ listStyle: "none" }}>
+          <li className="item">
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={faInstagram} />
+            </a>
+          </li>
+          <li className="item">
+            <a href="#">
+              <FontAwesomeIcon className="icon" icon={faFacebook} />
+            </a>
+          </li>
+        </ul>
       </div>
       <div className="directions">
         <h2>Directions</h2>

@@ -7,13 +7,15 @@ const blogPosts = [
     id: 1,
     title: "Post Title 1",
     content: "This is the first post content.",
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl:
+      "https://static.vecteezy.com/system/resources/thumbnails/022/906/122/small/ai-generated-christian-church-with-a-religious-cross-and-aura-light-in-the-whole-room-photo.jpg",
   },
   {
     id: 2,
     title: "Post Title 2",
     content: "This is the second post content.",
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl:
+      "https://wp.cruxnow.com/wp-content/uploads/2021/06/Father-Larry-pic.png",
   },
   {
     id: 3,
