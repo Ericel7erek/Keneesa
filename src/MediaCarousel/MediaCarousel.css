@@ -106,3 +106,19 @@
 .demo:hover {
   opacity: 1;
 }
+
+.img {
+  width: 100%;
+  height: auto;
+  max-height: 40rem; /* Set your desired maximum height here */
+}
+#img {
+  height: 8rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #img {
+    height: 4rem;
+    width: 100%;
+  }
+}

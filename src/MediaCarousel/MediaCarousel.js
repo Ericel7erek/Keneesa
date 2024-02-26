@@ -74,11 +74,7 @@ const MediaCarousel = () => {
           <div className="numbertext">{`${index + 1} / ${
             slideData.length
           }`}</div>
-          <img
-            src={slide.src}
-            style={{ width: "100%", height: "40rem" }}
-            alt={slide.alt}
-          />
+          <img className="img" src={slide.src} alt={slide.alt} />
         </div>
       ))}
 
@@ -102,7 +98,7 @@ const MediaCarousel = () => {
                 index + 1 === slideIndex ? "active" : ""
               }`}
               src={slide.thumb}
-              style={{ width: "100%", height: "8rem" }}
+              id="img"
               onClick={() => currentSlide(index + 1)}
               alt={slide.alt}
             />
