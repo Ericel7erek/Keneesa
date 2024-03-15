@@ -39,7 +39,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: red;
+  background:hsl(203, 92%, 8%);
   z-index: 0;
   scale: 1 0;
   transform-origin: bottom;
