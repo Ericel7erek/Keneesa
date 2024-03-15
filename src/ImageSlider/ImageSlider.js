@@ -45,9 +45,7 @@ const ImageSlider = () => {
         style={{ backgroundImage: images[currentIndex] }}
         onMouseEnter={pauseSlideshow}
         onMouseLeave={resumeSlideshow}
-      >
-        <div className="layer"></div>
-      </div>
+      ></div>
       <div className="centered">الكنيسة</div>
     </div>
   );
